@@ -1,5 +1,9 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +39,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#container {
+  width: 50%;
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+ul,li{
+  margin: 5px;
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+  border-radius: 10px;
+  background-color: rgb(213, 193, 214,.5);
+}
+
+li{
+  background-color: rgb(213, 193, 214,0.7);
+}
+
+button{
+  padding: 15px 20px;
+  background-color: honeydew;
+  border: none;
+  border-radius: 10px;
+  float: right;
+}
+
+button::placeholder{
+  text-align: center;
+}
+
+button:focus{
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#totalcontacts{
+  float:left;
+  margin: 10px;
+}
+
+.right{
+  float: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
